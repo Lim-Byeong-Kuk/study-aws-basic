@@ -14,4 +14,10 @@ public class HealthCheckController {
         log.info("health check...");
         return ResponseEntity.ok("Success Health Check");
     }
+
+    @GetMapping("/")
+    public ResponseEntity<String> hello() {
+        log.info("hello");
+        return ResponseEntity.ok("hello");
+    }
 }
